@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 07-21-2021
+ * @last modified on  : 07-22-2021
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
  * Modifications Log 
  * Ver   Date         Author                               Modification
@@ -11,7 +11,7 @@
 public with sharing class AccountSearchController {
     @AuraEnabled
     public static List<Account> searchAccounts( String searchTerm ) {
-        integer i = 100;
+        integer i = 2500;
         List<Account> accounts = new List<Account>();
         if ( String.isNotBlank( searchTerm ) ) {
             List<List<SObject>> searchResults = [
